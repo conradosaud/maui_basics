@@ -3,10 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.Cadastro"
              Title="Cadastro">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+    
+    <VerticalStackLayout Spacing="10" Padding="20" >
+
+        <Label Text="Digite seu nome:" />
+        <Entry x:Name="EntryNome" />
+
+        <Label Text="Digite sua idade:" />
+        <Entry x:Name="EntryIdade" />
+
+        <Button Text="Salvar" />
+
     </VerticalStackLayout>
+    
 </ContentPage>
