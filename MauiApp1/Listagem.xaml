@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Listagem"
+             Title="Listagem">
+    
+    <VerticalStackLayout>
+        
+        <Label Text="Minha lista de pessoas"/>
+
+
+        <ListView x:Name="Lista"  >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+
+                        <VerticalStackLayout>
+                            
+                            <Label Text="{Binding nome}" FontSize="20" />
+                            <Label Text="{Binding idade}" />
+                            <Button CommandParameter="{Binding id}"  Text="Remover" Clicked="Button_Clicked" />
+
+                        </VerticalStackLayout>
+
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+    </VerticalStackLayout>
+</ContentPage>

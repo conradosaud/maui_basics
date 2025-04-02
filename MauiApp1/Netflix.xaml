@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Netflix"
+             Title="Netflix">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="15" Spacing="20" >
+
+            <HorizontalStackLayout Spacing="30" >
+                <Button Text="Séries" BackgroundColor="Transparent" TextColor="Black" BorderColor="Black" BorderWidth="1.5" />
+                <Button Text="Filmes" BackgroundColor="Transparent" TextColor="Black" BorderColor="Black" BorderWidth="1.5" />
+                <Button Text="Categorias" BackgroundColor="Transparent" TextColor="Black" BorderColor="Black" BorderWidth="1.5" />
+            </HorizontalStackLayout>
+
+            <Border StrokeShape="RoundRectangle 20" >
+
+                <VerticalStackLayout Spacing="30">
+
+                    <HorizontalStackLayout>
+                        <Image Source="dotnet_bot.png" WidthRequest="125" />
+                        <Label Text="Matrix, O Filme" VerticalOptions="Center" />
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Spacing="50" >
+                        <Label Text="Caça aos Itens" />
+                        <Label Text="Fantasia" />
+                        <Label Text="Ficção" />
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Spacing="10">
+                        <Button Text="Assistir ao Filme"/>
+                        <Button Text="Minha lista"/>
+                    </HorizontalStackLayout>
+
+                </VerticalStackLayout>
+
+            </Border>
+
+
+            <VerticalStackLayout>
+                
+                <Label Text="Sugestões que você vai adorar" />
+
+                <ScrollView Orientation="Horizontal" >
+                    <HorizontalStackLayout>
+                            <Image Source="dotnet_bot.png" WidthRequest="100" />
+                            <Image Source="dotnet_bot.png" WidthRequest="100" />
+                            <Image Source="dotnet_bot.png" WidthRequest="100" />
+                            <Image Source="dotnet_bot.png" WidthRequest="100" />
+                    </HorizontalStackLayout>
+                </ScrollView>
+                
+            </VerticalStackLayout>
+            
+
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.VerticalHorizontal"
+             Title="VerticalHorizontal">
+
+<ScrollView>
+    
+    <VerticalStackLayout Spacing="30" Padding="25" Background="Beige" >
+
+            <VerticalStackLayout Background="White" Padding="20">
+                
+            <HorizontalStackLayout>
+
+                <Image WidthRequest="150" Source="dotnet_bot.png" />
+
+                <VerticalStackLayout VerticalOptions="Center" >
+
+                    <Label Text="Título" FontSize="20" FontAttributes="Bold" />
+                    <Label Text="Não vai dar muito certo"/>
+
+                </VerticalStackLayout>
+
+            </HorizontalStackLayout>
+
+            <Button Text="Comprar" Clicked="Comprar_Clicked" />
+            <Label x:Name="LabelComprar" Text="Produto adicionado ao carrinho!" BackgroundColor="LimeGreen" TextColor="White" Margin="10" Padding="10" IsVisible="False" />
+
+            </VerticalStackLayout>
+
+
+            <VerticalStackLayout Background="White" Padding="20">
+            <HorizontalStackLayout>
+
+                <Image WidthRequest="150" Source="dotnet_bot.png" />
+
+                <VerticalStackLayout VerticalOptions="Center" >
+
+                    <Label Text="Título" FontSize="20" FontAttributes="Bold" />
+                    <Label Text="Não vai dar muito certo"/>
+
+                </VerticalStackLayout>
+
+            </HorizontalStackLayout>
+
+            <Button Text="Comprar" />
+        </VerticalStackLayout>
+
+
+        <VerticalStackLayout>
+            <HorizontalStackLayout>
+
+                <Image WidthRequest="150" Source="dotnet_bot.png" />
+
+                <VerticalStackLayout VerticalOptions="Center" >
+
+                    <Label Text="Título" FontSize="20" FontAttributes="Bold" />
+                    <Label Text="Não vai dar muito certo"/>
+
+                </VerticalStackLayout>
+
+            </HorizontalStackLayout>
+
+            <Button Text="Comprar" />
+        </VerticalStackLayout>
+
+
+
+    </VerticalStackLayout>
+
+
+</ScrollView>
+
+</ContentPage>

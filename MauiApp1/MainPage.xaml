@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+
+
+            <Label Text="Tela de Login" FontSize="30" HorizontalOptions="Center" TextColor="Red" />
+
+            <Label Text="Insira seu usuário" />
+            <Entry x:Name="inputNome" Placeholder="Digite..." />
+
+            <Label Text="Insira sua senha" />
+            <Entry x:Name="inputSenha" Placeholder="Digite..." />
+
+            <Button Text="Entrar" Clicked="Entrar_Clicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
