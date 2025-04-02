@@ -63,7 +63,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Cada.xaml">
+	  <MauiXaml Update="Cadastro.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Grid.xaml">

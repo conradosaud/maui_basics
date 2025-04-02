@@ -18,7 +18,6 @@
                             
                             <Label Text="{Binding nome}" FontSize="20" />
                             <Label Text="{Binding idade}" />
-                            <Button CommandParameter="{Binding id}"  Text="Remover" Clicked="Button_Clicked" />
 
                         </VerticalStackLayout>
 

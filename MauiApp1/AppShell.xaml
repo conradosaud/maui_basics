@@ -4,20 +4,19 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MauiApp1"
-    
     Title="MauiApp1">
 
-
-        <ShellContent
-    Title="Tela de Login"
-    ContentTemplate="{DataTemplate local:MainPage}"
-    Route="MainPage" />
     
-        <ShellContent
-    Title="Vertical e Horizontal"
-    ContentTemplate="{DataTemplate local:VerticalHorizontal}"
-    Route="VerticalHorizontal" />
+        
+    <ShellContent
+        Title="Tela de Login"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
 
+    <ShellContent
+        Title="Vertical e Horizontal"
+        ContentTemplate="{DataTemplate local:VerticalHorizontal}"
+        Route="VerticalHorizontal" />
 
     <ShellContent
         Title="Netflix"
@@ -29,7 +28,7 @@
         ContentTemplate="{DataTemplate local:Grid}"
         Route="Grid" />
 
-    <FlyoutItem Title="Pessoas" >
+    <FlyoutItem Title="Pessoas" Icon="dotnet_bot.png" >
         
         <ShellContent
             Title="Listagem"
@@ -38,10 +37,11 @@
 
         <ShellContent
             Title="Cadastro"
-            ContentTemplate="{DataTemplate local:Cada}"
-            Route="Cada" />
-
+            ContentTemplate="{DataTemplate local:Cadastro}"
+            Route="Cadastro" />
+        
     </FlyoutItem>
+    
 
 
 
